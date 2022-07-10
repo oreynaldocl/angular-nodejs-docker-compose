@@ -1,22 +1,14 @@
 version: '3'
 services:
   nodejs-server:
-    build:
-      context: ./api
-      dockerfile: Dockerfile-dev
+    image: oreynaldocl/ang-node-api:latest
     ports:
       - "3080:3080"
     container_name: node-api
-    volumes:
-       - ./api:/usr/src/app/api
-       - /usr/src/app/api/node_modules
   angular-ui:
-    build:
-      context: ./app-ui
-      dockerfile: Dockerfile-dev
+    image: oreynaldocl/ang-node-ui:latest
     ports:
-      - "4201:4201"
+      - "4201:80"
     container_name: angular-ui
-    volumes:
-       - ./app-ui:/usr/src/app/app-ui
-       - /usr/src/app/app-ui/node_modules
+    depends_on:
+      - node-api
