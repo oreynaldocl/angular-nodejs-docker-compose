@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(express.static(process.cwd()+"/my-app/dist/angular-nodejs-docker-compose/"));
 
 app.get('/api/users', (req, res) => {
-  console.log('dfsdfsd')
+  console.log('users listed')
   res.json(users);
 });
 
@@ -20,6 +20,7 @@ app.post('/api/user', (req, res) => {
 });
 
 app.get('/', (req,res) => {
+  // redirected
   res.sendFile(process.cwd()+"/app-ui/dist/angular-nodejs-docker-compose/index.html")
 });
 
