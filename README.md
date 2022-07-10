@@ -52,5 +52,7 @@ copy SSH version from WEB git@github.com:oreynaldocl/angular-nodejs-docker-compo
 
 ```
 git remote set-url origin git@github.com:oreynaldocl/angular-nodejs-docker-compose.git
+
+git remote -v
 ```
 https://devconnected.com/how-to-change-git-remote-origin/#Changing_Git_Remote_to_SSH
