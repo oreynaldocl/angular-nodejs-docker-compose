@@ -44,3 +44,13 @@ https://sep.com/blog/hosting-the-node-api-in-nginx-with-a-reverse-proxy/#:~:text
 
 ## Run sh in windows
 https://stackoverflow.com/questions/36401147/running-sh-scripts-in-git-bash
+
+## Change origin
+https://github.com/oreynaldocl/angular-nodejs-docker-compose
+
+copy SSH version from WEB git@github.com:oreynaldocl/angular-nodejs-docker-compose.git
+
+```
+git remote set-url origin git@github.com:oreynaldocl/angular-nodejs-docker-compose.git
+```
+https://devconnected.com/how-to-change-git-remote-origin/#Changing_Git_Remote_to_SSH
